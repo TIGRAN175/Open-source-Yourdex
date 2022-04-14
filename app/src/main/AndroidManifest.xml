@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Yourdex">
         <activity
+            android:name=".NewItemToAddInfoPage"
+            android:exported="false" />
+        <activity
+            android:name=".SetDisplayPage"
+            android:exported="false" />
+        <activity
             android:name=".CurrentSetsPage"
             android:exported="false" />
         <activity

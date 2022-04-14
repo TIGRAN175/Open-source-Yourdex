@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "Login clicked", Toast.LENGTH_SHORT).show();
                MoveToHomescreen();
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out); // activity transition animation
+
+
             }
         });
 

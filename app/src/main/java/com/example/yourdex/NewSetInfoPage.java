@@ -24,6 +24,7 @@ public class NewSetInfoPage extends AppCompatActivity {
             public void onClick(View view) {
 
                 MoveToSetListsPage();
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);  // activity transition animation
             }
         });
     }
@@ -32,7 +33,7 @@ public class NewSetInfoPage extends AppCompatActivity {
 
     public void MoveToSetListsPage()
     {
-        Intent intent = new  Intent(this, CurrentSetsPage.class);
+        Intent intent = new  Intent(this, SetDisplayPage.class);
         startActivity(intent);
     }
 }
