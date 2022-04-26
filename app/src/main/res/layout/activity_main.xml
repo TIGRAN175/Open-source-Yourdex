@@ -9,7 +9,7 @@
     android:background="#1cbdad"
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/BTN_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="sign up"
@@ -20,15 +20,16 @@
         app:layout_constraintVertical_bias="0.046" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/LOGIN_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="184dp"
         android:backgroundTint="@android:color/white"
         android:ems="10"
         android:gravity="center"
-        android:hint="email"
+        android:hint="Username"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#FFFFFF"
@@ -40,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/LOGIN_pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/white"
@@ -48,6 +49,7 @@
         android:gravity="center"
         android:hint="password"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textColorLink="#FFFFFF"
@@ -56,7 +58,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/LOGIN_username"
         app:layout_constraintVertical_bias="0.11" />
 
     <ImageView
@@ -91,7 +93,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/LOGIN_pass"
         app:layout_constraintVertical_bias="0.416" />
 
     <ImageButton
