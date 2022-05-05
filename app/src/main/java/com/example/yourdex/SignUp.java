@@ -24,7 +24,7 @@ public class SignUp extends AppCompatActivity {
     private EditText eRegPassword;
     private Button eRegister;
 
-    Credentials credentials;
+   public static Credentials credentials;
 
 
 
@@ -42,7 +42,7 @@ public class SignUp extends AppCompatActivity {
         eRegister = findViewById(R.id.signUPBTN);  // sign up button
 
 
-        sharedPreferences = getApplicationContext().getSharedPreferences("CredentialsDB", MODE_PRIVATE);
+        sharedPreferences = getApplicationContext().getSharedPreferences("CredentialsDB", MODE_PRIVATE);  //Offline storage of name
         sharedPreferencesEditor = sharedPreferences.edit();
 
 
@@ -55,8 +55,8 @@ public class SignUp extends AppCompatActivity {
 
             if (validate(regUsername, regPassword)) {
 
-                credentials = new Credentials(regUsername, regPassword);
-                // Store credendts
+                credentials = new Credentials(regUsername, regPassword);   //thinks its an int problem?
+                // Store credentials
 
                 sharedPreferencesEditor.putString("Username", regUsername);
                 sharedPreferencesEditor.putString("Password", regPassword);
